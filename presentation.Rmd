@@ -1,0 +1,57 @@
+---
+title: 'Shiny Application and Reproducible Pitch'
+author: "Hossam Saad"
+date: " 18/ 08 / 2020"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Executive summary
+========================================================
+
+
+This presentation is part of the Capstone project, with the objective of building a text predictive application the form of a web application.
+
+The main objectives:
+
+* Analyze large textual data sets
+* Build a predictive algorithm for words when typing
+* Create a predictive web application as the final product
+* Write a short presentation describing the algorithm and the application
+
+Algorithm
+========================================================
+
+Dataset: as provided, the blogs, the news and the twitter source dataset.
+
+Data processing: the used dataset is provided as pre-processed, lowercased, trimmed.
+
+N-grams: 2,3,4 grams are created to provide the prediction
+
+Prediction: using at least 2 words from a text input as a reference for the n-gram tables.
+The application will return with the most frequent next word.
+
+
+Usage
+========================================================
+
+After the application is launched, enter some text in the input box. 
+The application will update automatically, when you hit the 'space' button.
+
+The prediction for the 3 datasets can be seen in the application output.
+
+
+
+
+Additional
+========================================================
+
+This application is using [reactive expressions](http://shiny.rstudio.com/tutorial/lesson6/) for better user experience, and auto update.
+
+The application can be found @ [ShinyApps.io](https://hossam-saad.shinyapps.io/FinalProject/?_ga=2.11981236.189854676.1597676373-688968386.1595691258).
+
